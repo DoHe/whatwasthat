@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "WhatWasThat",
+    "version": "1.0",
+    "description": "__MSG_extensionDescription__",
+    "default_locale": "en",
+    "icons": {
+        "48": "icons/48.png",
+        "96": "icons/96.png"
+    },
+    "permissions": [
+        "https://google.com/"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://meet.google.com/*"
+            ],
+            "js": [
+                "content/what.js"
+            ],
+            "css": [
+                "content/what.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "titlepop",
+  "version": "1.2.0",
+  "main": "scripts/background.js",
+  "author": "DoHe",
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "web-ext": "^4.2.0"
+  },
+  "scripts": {
+    "start": "web-ext run --source-dir ./",
+    "android": "web-ext run --target=firefox-android",
+    "build": "web-ext build",
+    "lint": "web-ext lint"
+  }
+}
